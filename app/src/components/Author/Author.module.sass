@@ -1,0 +1,67 @@
+.author
+    background-color: #F5F8FC
+    display: grid
+    grid-template-columns: 1fr 1fr
+    padding: 150px 50px
+
+.content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 50px
+
+    h2
+        font-size: 42px
+        font-family: 'Cardo', serif
+        position: relative
+        color: #1B3764
+
+        &::after
+            content: ''
+            position: absolute
+            top: 100%
+            left: 0
+            width: 50px
+            height: 3px
+            background-color: #FFCA42
+
+    .info
+        display: flex
+
+        div
+            position: relative
+
+        div+div
+            margin-left: 100px
+
+        div+div::after
+            content: ''
+            position: absolute
+            top: 0
+            left: -50px
+            height: 100%
+            width: 1px
+            background-color: #FFCA42
+
+        .number
+            font-size: 54px
+            color: #1B3764
+            font-family: 'Cardo', serif
+
+.contacts
+    background-color: #1B3764
+    padding: 15px 20px
+    width: 484px
+    height: 161px
+    display: grid
+    grid-template-columns: 1fr auto
+
+    .contactsText
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        .name
+            color: #FFCA42
+            font-family: 'Cardo', serif
+            font-size: 22px
