@@ -1,0 +1,19 @@
+.picture
+    position: relative
+    width: 550px
+    height: 652px
+    z-index: 10
+
+    img
+        width: 100%
+        height: auto
+
+    &::after
+        content: ''
+        position: absolute
+        top: 30px
+        left: 30px
+        height: 100%
+        width: 100%
+        border: 10px solid #FFCA42
+        z-index: -1

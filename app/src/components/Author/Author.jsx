@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Author.module.sass';
 import QRcode from '../../media/Qr.png';
-import author from '../../media/author1.png';
+import author from '../../media/Author.png';
 import Picture from '../UI/Picture';
 import Description from '../UI/Description';
 
