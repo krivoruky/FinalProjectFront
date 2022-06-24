@@ -1,0 +1,44 @@
+.main
+    padding: 80px 93px
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+.mainText
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    .wellcome
+        margin-left: 60px
+        font-size: 21px
+        font-family: 'Cardo', serif
+        color: #fff
+        position: relative
+        margin-bottom: 10px
+
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: -50px
+            height: 2px
+            width: 35px
+            background-color: #FFCA42
+
+    h1
+        font-size: 64px
+        color: #fff
+        font-family: 'Cardo', serif
+        margin-bottom: 25px
+
+    .btn
+        margin: 40px 0
+
+    .slogan
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+.mainImg
+    display: flex
+    justify-content: flex-end
