@@ -1,11 +1,11 @@
 import React from 'react';
 import s from './Logo.module.sass';
-import logo from '../../../media/logo.png';
+import LogoNav from '../../../media/LogoNav.png';
 
 export default function Logo() {
   return (
     <div className={s.logo}>
-      <img src={logo} alt="logo" />
+      <img src={LogoNav} alt="logo" />
       <p>Pages</p>
     </div>
   );

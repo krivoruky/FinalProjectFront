@@ -1,11 +1,11 @@
 import React from 'react';
 import Picture from '../UI/Picture';
 import Title from '../UI/Title';
-import s from './Skills.module.sass';
-import Learn from '../../media/Learn.png';
+import s from './Learn.module.sass';
+import LearnImg from '../../media/Learn.png';
 import Skill from './Skill/Skill';
 
-export default function Skills({ skills }) {
+export default function Learn({ skills }) {
   return (
     <div className={s.learn}>
       <Title>What Will You Learn?</Title>
@@ -16,7 +16,7 @@ export default function Skills({ skills }) {
           ))}
         </div>
         <div className={s.img}>
-          <Picture img={Learn} />
+          <Picture img={LearnImg} />
         </div>
       </div>
     </div>

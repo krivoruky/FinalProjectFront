@@ -1,9 +1,10 @@
 import React from 'react';
-import Description from '../../UI/Description';
-import s from './CopyToday.module.sass';
-import Copy from '../../media/CopyToday.png';
 
-export default function CopyToday() {
+import s from './Copy.module.sass';
+import CopyImg from '../../media/CopyToday.png';
+import Description from '../UI/Description';
+
+export default function Copy() {
   return (
     <div className={s.copy}>
       <div className={s.text}>
@@ -14,7 +15,7 @@ export default function CopyToday() {
         </Description>
       </div>
       <div className={s.img}>
-        <img src={Copy} alt="img" />
+        <img src={CopyImg} alt="CopyToday" />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Holder.module.sass';
+import s from './Main.module.sass';
 import imgMain from '../../../media/Header.png';
 import Button from '../../UI/Button';
 import Description from '../../UI/Description';

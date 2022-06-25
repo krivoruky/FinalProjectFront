@@ -3,11 +3,11 @@ import './App.css';
 import Articles from './components/Articles';
 import Author from './components/Author';
 import AuthorsBook from './components/AuthorsBook';
-import CopyToday from './components/CopyToday';
+import Copy from './components/Copy/Copy';
 import Customers from './components/Customers';
 import Header from './components/Header';
 import Info from './components/Info';
-import Skills from './components/Skills';
+import Learn from './components/Learn';
 import { getArticles, getBooks, getPartners, getSkills } from './requests';
 
 function App() {
@@ -38,8 +38,8 @@ function App() {
       <AuthorsBook books={book} />
       <Author />
       <Customers customers={partner} />
-      <CopyToday />
-      <Skills skills={skills} />
+      <Copy />
+      <Learn skills={skills} />
       <Articles articles={articles} />
       <Info />
     </div>
