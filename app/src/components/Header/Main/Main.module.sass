@@ -34,6 +34,41 @@
     .btn
         margin: 40px 0
 
+    .mainBtns
+        display: flex
+        flex-direction: row
+        padding-top: 30px
+        align-items: center
+
+    .mainDemoBtn
+        width: 222px
+        height: 66px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        font-family: 'Cardo'
+        font-style: normal
+        font-weight: 400
+        font-size: 19px
+        line-height: 30px
+        letter-spacing: 0.38px
+        text-transform: capitalize
+        color: #FFFFFF
+
+        p
+            cursor: pointer
+            transition: color 0.5s ease
+
+            &:hover
+                color: #FFCA42
+
+        &::after
+            content: ''
+            border-bottom: 1px solid #FFFFFF
+            width: 65%
+            height: 5px
+
     .slogan
         width: 100%
         display: flex

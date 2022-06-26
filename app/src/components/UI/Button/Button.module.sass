@@ -1,18 +1,101 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
 .button
-    color: #1B3764
     font-family: 'Cardo', serif
     font-size: 18px
-    display: flex
-    align-items: center
-    justify-content: center
-    background-color: #FFCA42
-    outline: 1px solid #FFCA42
+    color: #FFCA42
     width: 222px
     height: 66px
     cursor: pointer
-    transition: background-color 0.5s cubic-bezier(0.1, -0.6, 0.2, 0), color 0.5s cubic-bezier(0.1, -0.6, 0.2, 0), transform 0.1s cubic-bezier(0.1, -0.6, 0.2, 0)
 
-    &:hover
-        background-color: #1B3764
-        color: #fff
-        transform: scale(0.88)
+    position: relative
+    display: inline-block
+    padding: 20px 30px
+    margin: 40px 0
+    text-decoration: none
+    transition: 0.5s
+    letter-spacing: 4px
+    overflow: hidden
+    margin-right: 50px
+
+.button:hover
+    background: #FFCA42
+    color: #050801
+    box-shadow: 0 0 5px #FFCA42, 0 0 25px #FFCA42, 0 0 50px #FFCA42, 0 0 200px #FFCA42
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005)
+
+// .button:nth-child(1)
+//     filter: hue-rotate(270deg)
+
+// .button:nth-child(2)
+//     filter: hue-rotate(110deg)
+
+.button span
+    position: absolute
+    display: block
+
+.button span:nth-child(1)
+    top: 0
+    left: 0
+    width: 100%
+    height: 2px
+    background: linear-gradient(90deg,transparent,#FFCA42)
+    animation: animate1 1s linear infinite
+
+@keyframes animate1
+    0%
+        left: -100%
+
+    50%,100%
+        left: 100%
+
+.button span:nth-child(2)
+    top: -100%
+    right: 0
+    width: 2px
+    height: 100%
+    background: linear-gradient(180deg,transparent,#FFCA42)
+    animation: animate2 1s linear infinite
+    animation-delay: 0.25s
+
+@keyframes animate2
+    0%
+        top: -100%
+
+    50%,100%
+        top: 100%
+
+.button span:nth-child(3)
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 2px
+    background: linear-gradient(270deg,transparent,#FFCA42)
+    animation: animate3 1s linear infinite
+    animation-delay: 0.50s
+
+@keyframes animate3
+    0%
+        right: -100%
+
+    50%,100%
+        right: 100%
+
+.button span:nth-child(4)
+    bottom: -100%
+    left: 0
+    width: 2px
+    height: 100%
+    background: linear-gradient(360deg,transparent,#FFCA42)
+    animation: animate4 1s linear infinite
+    animation-delay: 0.75s
+
+@keyframes animate4
+    0%
+        bottom: -100%
+
+    50%,100%
+        bottom: 100%

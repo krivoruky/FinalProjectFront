@@ -15,7 +15,13 @@ export default function Main() {
           We believe that reading books are essential to a healthy culture.
           They’re where authors can connect with readers.
         </Description>
-        <Button margin="40px 0">Order Today</Button>
+        <div className={s.mainBtns}>
+          {' '}
+          <Button margin="40px 0">Order Today</Button>
+          <div className={s.mainDemoBtn}>
+            <p>Read Free Demo</p>
+          </div>
+        </div>
         <div className={s.slogan}>
           <Mark text="250pages">Pages:</Mark>
           <Mark text="10 Hours">Length:</Mark>

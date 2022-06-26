@@ -5,8 +5,8 @@ import twitter from '../../../media/Img2.png';
 import LinkedIn from '../../../media/Img3.png';
 import Social from '../../UI/Social';
 import s from './Nav.module.sass';
-import Button from '../../UI/Button';
 import NavButton from '../../UI/NavButton';
+import Button from '../../UI/Button';
 
 export default function Nav() {
   return (
