@@ -1,12 +1,11 @@
 import React from 'react';
 import Description from '../../UI/Description';
 import s from './Partners.module.sass';
-import Partner from '../../../media/Partner.png';
 
-export default function Partners({ name, comment }) {
+export default function Partners({ name, comment, logo }) {
   return (
     <div className={s.partners}>
-      <img src={Partner} alt="Partners" />
+      <img src={`../media/${logo}`} alt={logo} />
       <h6>{name}</h6>
       <Description>{comment}</Description>
     </div>
